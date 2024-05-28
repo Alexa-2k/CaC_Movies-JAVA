@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/e5f22e2316.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+
+    <title>CAC-Movies</title>
+</head>
+<body>
+    <header class="header">
+        <section class="header box animate__animated animate__backInUp">
+          
+          <nav class="header-nav">
+            <a class="Logo" href="#">
+                <i class="fas fa-film" aria-hidden="true"></i>
+                <span class = "span">CAC-Movies</span>
+            </a>
+            <ul class="nav-list">
+                <li class="listItem"><a class="nav-link" href="#tendencias">Tendencias</a></li>
+                <li class="listItem"><a class="nav-link" href="register.html">Registrarse</a></li>
+                <li class="listItem"><a class="nav-link iniciarSesion" href="index.html">Iniciar Sesión</a></li>
+            </ul>
+          </nav>
+     </section>
+    </header>
+
+<main>
+
+   <section id ="top-container" class="fill animate__animated animate__zoomIn" background="url(images/bannerIA.jpeg)"; >      
+        <div class = "main-title "> 
+            <h1 class = "title">Películas y series ilimitadas <br> en un solo lugar</h1>
+        </div> 
+            
+        <div class="subtitle"> 
+            <h2 class = "title">Disfrutá donde quieras. <br> Cancelá en cualquier momento.</h2>
+        </div>  
+        <div class = "btn-div"> 
+            <a class="btnRegister" href="register.html">Registrate</a>
+        </div> 
+   </section>
+
+
+      
+  <section class="buscar">
+     <h2 >¿Qué estás buscando para ver?</h2>
+     <form class="buscaPeli">
+          <input class="input" type="text" placeholder="Buscar..." id="buscar" name="buscar">
+          <input class="btnBuscar" type="submit" value="Buscar">
+     </form>
+   </section>
+   <hr>  
+  <section id="tendencias">
+    <div class="section-title">
+        <h2 class="section-title" > Tendencias</h2>
+    </div>
+    
+    <div id="pelis" class="flex-container">      
+       <div class="peli-card divlink">
+            <!-- contenedor tarjeta para cada pelicula. Se formatea desde JS -->
+       </div>
+    </div> <!-- pelis flex container -->
+
+    <div>
+        <button id="anterior" class="btn anterior">Anterior</button>  
+        <button id="siguiente" class="btn siguiente">Siguiente</button>
+        <div id ="paginar"><p>Página: 1 </p></div>	    
+    </div>
+     
+    </section> <!-- tendencias -->
+ 
+<!-- ================ aclamadas ========================= --> 
+<section class = "aclamadas container">
+  <a name="aclamadas"></a>
+  <div class="section-title">
+      <h2 class="section-title">Las más aclamadas</h2>
+  </div>
+
+  <div class="aclamadas-main flex container">
+
+    <div class="peli-card">
+        <div class="card-img">
+          <img class="peli-img" src="images/pelis/a01-Green-Mile.jpeg">
+        </div>
+        <div class="card-title">
+            <h3 class = "card-title">The green mile </h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/ConferenciaBA/blob/main/README.md" target="_blank"> <button class= "more">+ Info</button></a> -->
+        </div>
+      </div>
+          
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a02-godfather2.png">
+        </div>
+        <div class="card-title">
+            <h3 class = "card-title">The Godfather II </h3>
+        </div>
+    <div>
+            <!-- <a href="https://github.com/Alexa-2k/ConferenciaBA/blob/main/README.md" target="_blank"> <button class= "more">+ Info</button></a> -->
+        </div>
+      </div>
+ 
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a02-Schindlers-list.png">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">Schindler's list</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/Batman/blob/main/README.md" target="_blank"> <button class= "more">+ Info</button></a> -->
+        </div>
+    </div>
+        
+             
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a05-the-dark-knight.png">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">The dark knight</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/Encriptador-ONE/blob/main/README.md" target="_blank"> <button class= "more">+ Info</button></a> -->
+        </div>
+    </div>
+ 
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a06-Dark-knight-rises.png">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">The dark knight rises</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/Apeperia/blob/main/README.md" target="_blank"> <button class= "more">+ Info</button></a> -->
+        </div>
+    </div>
+        
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a08-batman-begins.png">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">Batman Begins</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/Task-list/blob/main/README.md" target="_blank"> <button class= "more">+ Info</button></a> -->
+        </div>
+    </div>
+        
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a07-da-vinci-code.png">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">The Da Vinci code</h3>
+        </div>
+        <div>
+         <!-- <a href="https://github.com/Alexa-2k/Drumkit/blob/main/README.md" target="_blank"> <button class= "more">+ Info</button></a> -->
+        </div>
+    </div> 
+
+
+          
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a09-matrix.jpg">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">Matrix</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/Barberia/blob/main/README.md" target="_blank"> <button class= "more">+ Info</button></a> -->
+        </div>
+    </div>
+ 
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a10-terminator.jpg">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">Terminator</h3>
+        </div>
+        <div>
+           <!-- <a href="https://github.com/Alexa-2k/Formingreso/blob/main/README.md" target="_blank"> <button class= "more">+ Info</button></a> -->
+        </div>
+    </div>
+        
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a11-ironman.png">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">Ironman</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/DSOO.A2.televisor/blob/main/README.md" target="_blank"> <button class= "more">+ Info</button></a> -->
+        </div>
+    </div>
+        
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a12-godfather.jpeg">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">The Godfather</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/Empresa/blob/main/README.md" target="_blank"> <button class= "more"> + Info</button></a> -->
+        </div>
+    </div> 
+
+    <div class="peli-card">
+        <div class="card-img">
+          <img class="peli-img" src="images/pelis/a13-Xmen.png">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">X Men</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/Empresa/blob/main/README.md" target="_blank"> <button class= "more"> + Info</button></a> -->
+        </div>
+    </div> 
+
+
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a14-inglorious-basterds.png">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">Inglorious basterds</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/Empresa/blob/main/README.md" target="_blank"> <button class= "more"> + Info</button></a> -->
+        </div>
+    </div> 
+
+
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a15-interstellar.jpg">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">Interstellar</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/Empresa/blob/main/README.md" target="_blank"> <button class= "more"> + Info</button></a> -->
+        </div>
+    </div> 
+
+
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a16-I-robot.jpg">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">I, robot</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/Empresa/blob/main/README.md" target="_blank"> <button class= "more"> + Info</button></a> -->
+        </div>
+    </div> 
+
+
+    <div class="peli-card">
+        <div class="card-img">
+            <img class="peli-img" src="images/pelis/a17-bicentennial_man.jpg">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">The bicentennial man</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/Empresa/blob/main/README.md" target="_blank"> <button class= "more"> + Info</button></a> -->
+        </div>
+    </div> 
+
+
+    <div class="peli-card">
+        <div class="card-img">
+          <img class="peli-img" src="images/pelis/a18-inception.jpg">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">Inception</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/Empresa/blob/main/README.md" target="_blank"> <button class= "more"> + Info</button></a> -->
+        </div>
+      </div> 
+
+  
+    <div class="peli-card">
+        <div class="card-img">
+          <img class="peli-img" src="images/pelis/a19-back to the future.png">
+        </div>
+        <div class="card-title">
+            <h3 class= "card-title">Back to the future</h3>
+        </div>
+        <div>
+            <!-- <a href="https://github.com/Alexa-2k/Empresa/blob/main/README.md" target="_blank"> <button class= "more"> + Info</button></a> -->
+        </div>
+   </div> 
+
+  </div> <!-- aclamadas flex container -->
+</section>  <!-- aclamadas -->
+
+</main>
+
+<footer class="footer">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="listItem"><a class="nav-link" href="#">Términos y condiciones</a></li>
+        <li class="listItem"><a class="nav-link" href="#">Preguntas frecuentes</a></li>
+        <li class="listItem"><a class="nav-link" href="#">Ayuda</a></li>
+        <li class="listItem"><a class="nav-link administradorPeliculas" href="#">Administrador Peliculas</a></li>
+        <li class="listItem"><a class="nav-link" href="#">Contacto</a></li>
+     </ul>
+    </nav>
+    
+ </footer>
+ </main>
+ <script src="./js/script.js"></script>  
+<!-- <script src="./js/app.js"></script> 
+     <script src="./js/fetch.js"></script>   -->
+</body>
+</html>
