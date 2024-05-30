@@ -14,7 +14,7 @@ btnAnterior.addEventListener("click", () => {
     }else if (pagina<=1){   
      pagina = 500;}
      pager.innerHTML = `Página: ${pagina}`;
-    
+         
      //si no, se pasa a la ultima
         cargarPeliculas();
     // llamar a la funcion que cargue las paginas de las peliculas desde la API
@@ -55,7 +55,7 @@ try {
         datos.results.forEach((pelicula)=>{
             peliculas += `
             <div class ="peli-link" ><a href="./detalle.html?id=${pelicula.id}" </a>
-            <div class="peli-card animate__animated animate__zoomIn">
+              <div class="peli-card animate__animated animate__zoomIn">
                 <div class="card-img">
                     <img class="peli-img" src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}" >
                 </div>
@@ -66,6 +66,7 @@ try {
            </div>`;
         });
         contenedor.innerHTML = peliculas;
+        window.location.href = "#tendencias";
        
     } // Si  hay error 404, mensaje
     else if (respuesta.status === 404) {
@@ -81,4 +82,5 @@ try {
 cargarPeliculas();
 
 
-
+/*==================================================================*/
+/* DETALLE PELICULA - PRUEBA*/

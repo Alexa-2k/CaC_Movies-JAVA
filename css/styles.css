@@ -215,7 +215,9 @@ z-index: -1;
 
 /* MAIN ESCRITORIO*/
 
-
+hr{
+  margin-bottom: 5rem;
+}
 
 .main-title {
   margin-top: 8%;

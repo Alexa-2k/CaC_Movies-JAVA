@@ -43,15 +43,15 @@
          <form  onsubmit="return false;">
                          
                <div class="form-group col-md-12">
-                  <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Apellido" minlength= "2"  >
+                  <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Apellido" minlength= "2" required >
                </div>
             
                <div class="form-group col-md-12">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" minlength = "2"  >
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" minlength = "2" required >
                </div>
                                              
                <div class="form-group col-md-12">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email"  >
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email"required >
                </div>
                   
                <div class="form-group col-md-12">
@@ -82,7 +82,7 @@
     <div class = "alerta" id="alerta-email" >
       <span class="closebtn" onclick = noAlertaMail()>&times;</span>
       <div class="mensaje">
-        <img src="./images/email1.png" width= "15%" alt="alerta-email-no-valido. Warning icons created by Freepik - Flaticon">
+        <img src="./images/email1.png" width= "5%" alt="alerta-email-no-valido. Warning icons created by Freepik - Flaticon">
       <h2> Email no válido o no ingresado</h2>
      
       </div>
@@ -93,7 +93,7 @@
     <div class = "alerta" id= "alerta-nombre" >
       <span class="closebtn" onclick = noAlertaNombre()>&times;</span>
       <div class = "mensaje">
-        <img src="./images/warning.png" width="15%" alt = "alerta-faltan-datos. Warning icons created by Andrean Prabowo - Flaticon">
+        <img src="./images/warning.png" width="5%" alt = "alerta-faltan-datos. Warning icons created by Andrean Prabowo - Flaticon">
       <h2> Faltan datos</h2>
       <h3> Ingresá tu nombre y apellido</h3>
     
@@ -104,7 +104,7 @@
     <div class = "alerta" id= "alerta-user" >
       <span class="closebtn" onclick = noAlertaUser()>&times;</span>
       <div class = "mensaje">
-        <img src="./images/warning2.png" width="15%" alt = "alerta-faltan-datos. Warning icons created by Andrean Prabowo - Flaticon">
+        <img src="./images/warning2.png" width="5%" alt = "alerta-faltan-datos. Warning icons created by Andrean Prabowo - Flaticon">
       <h2> Datos faltantes o inválidos</h2>
       <h3> Ingresá tu usuario y contraseña</h3>
     
@@ -114,7 +114,7 @@
     <div class = "alerta" id = "registroOK" >
       <span class="closebtn" onclick = noShowRegister()>&times;</span>
       <div class = "mensaje">
-        <img src="./images/1632603.png" width="15%" alt = "OK icon created by sonnycandra - Flaticon">
+        <img src="./images/1632603.png" width="5%" alt = "OK icon created by sonnycandra - Flaticon">
         <br>
         <h2> Registro Exitoso</h2><br>
        <!-- <span type="submit" class = "btn-verde" onclick = window.location.href = "./login.html">Ingresar</span>  -->
