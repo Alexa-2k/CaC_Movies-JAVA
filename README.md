@@ -3,12 +3,20 @@ TP integrador simulando una plataforma de películas online, utlizando HTML, CSS
 
 https://alexa-2k.github.io/CaC_Movies-JAVA/
 
-Conexión API: está intedrada directamente en la sección "Tendencias"
-La página de inicio contiene la sección "Tendencias" que consume la API del sitio TMDB para mostrar la grilla de películas. 
-Son 500 páginas que pueden ser recorridas mediante los botones 'Anterior' y 'Siguiente'. 
-Un índice exhibe el número de página actual
+## Detalles:
 
-La sección de Registro permite a un nuevo usuario ingresar sus datos para crear una cuenta.Los datos deben estar completos y cumplir con algunas restricciones. En caso de no cumplirse alguna de estas restricciones, aparecen alertas de tipo modal que impiden la registración
+### Conexión API: integrada directamente en la sección "Tendencias"
+* La página de inicio contiene la sección "Tendencias" que consume la API del sitio TMDB para mostrar la grilla de películas. 
+* Son 500 páginas que pueden ser recorridas mediante los botones 'Anterior' y 'Siguiente'. 
+* Un índice exhibe el número de página actual. 
+El recorrido es cíclico: si al llegar a la última página se presiona el botón "Siguiente", se vuelve a la primera. De modo similar, si estando en lampágina inicial se presiona el botón "Anterior", se pasa a la última página.
 
-El usuario ya registrado puede efectuar su login (Iniciar sesión) Al igual que en la registración, los datos ingresados en el login son verificados y en caso de ser correctos, se redirige al usuario a su página personal. En caso de no ser correctos los datos, se muestran alertas modales
+### Registro
+* La sección de Registro permite a un nuevo usuario ingresar sus datos para crear una cuenta.Los datos deben estar completos y cumplir con algunas restricciones. 
+* En caso de no cumplirse alguna de estas restricciones, aparecen alertas de tipo modal que impiden la registración
+
+### Login (Iniciar sesión)
+* El usuario ya registrado puede efectuar su login (Iniciar sesión) 
+* Al igual que en la registración, los datos ingresados en el login son verificados y en caso de ser correctos, se redirige al usuario a su página personal.
+* En caso de no ser correctos los datos, se muestran alertas modales
 
