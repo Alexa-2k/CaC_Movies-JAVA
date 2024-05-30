@@ -4,6 +4,8 @@ TP integrador simulando una plataforma de películas online, utlizando HTML, CSS
 https://alexa-2k.github.io/CaC_Movies-JAVA/
 
 ## Detalles:
+### Animaciones
+Aplicadas en logo, barra de menú, imagen de portada, tarjetas de películas.
 
 ### Conexión API: integrada directamente en la sección "Tendencias"
 * La página de inicio contiene la sección "Tendencias" que consume la API del sitio TMDB para mostrar la grilla de películas. 
