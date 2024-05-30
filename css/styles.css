@@ -476,7 +476,8 @@ font-family: 'Montserrat' sans-serif;
 }
 
 .another-box {
-      background-color: #97c83e;
+  /*    background-color: #97c83e;*/
+    background-color: transparent;
     
       
     }
