@@ -58,9 +58,14 @@ h2 {
 }  
 
 h3 {
- font-size: 0.8rem;
+ font-size: 1.4rem;
  font-weight: light;
 }
+
+h4 {
+ font-size: 1rem;
+ font-weight: light;
+}	
 
 p {
   line-height: 2;
@@ -242,9 +247,6 @@ z-index: -1;
   border-radius: 5px;
 }
 
- .btnPagina { 
-  padding: 1rem 2rem;
-   }
 
 .btn-Login {
     
@@ -258,7 +260,13 @@ z-index: -1;
 .btn:hover {
   background-color: var(--btn-hover);
   transition: transform 0.3s, scale(0.95);
-  box-shadow: 0 0 10px var(--shadow-color);
+  box-shadow: 0 0 30px var(--shadow-color);
+   }
+
+
+ .btnPagina { 
+  padding: 1rem 2rem;
+
    }
 
 .buscar{
@@ -319,7 +327,25 @@ text-align: center;
  transition: transform 0.3s, box-shadow 0.3s;
  }
 
-    
+#pelis{
+  margin: 0 auto;
+  width:86%;
+}
+
+#btnPaginas{
+  width:33%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-top: 1.5rem ;
+  margin-left: 36.5%;
+}    
+
+#paginar{
+  padding-left: 27%;
+}
+
+
 .aclamadas-main {
   width: 90%;
   flex-direction: row;
@@ -389,13 +415,6 @@ flex-wrap: wrap;
   background-color: transparent;
 }
 
-.anterior{
-
-  margin-left: 39.55%;
-} 
-.siguiente {
-  margin-left: 0.5%;
-}
 
 .more{
   margin-top: 1rem;
