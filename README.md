@@ -9,7 +9,7 @@ https://alexa-2k.github.io/CaC_Movies-JAVA/
 * La página de inicio contiene la sección "Tendencias" que consume la API del sitio TMDB para mostrar la grilla de películas. 
 * Son 500 páginas que pueden ser recorridas mediante los botones 'Anterior' y 'Siguiente'. 
 * Un índice exhibe el número de página actual. 
-El recorrido es cíclico: si al llegar a la última página se presiona el botón "Siguiente", se vuelve a la primera. De modo similar, si estando en lampágina inicial se presiona el botón "Anterior", se pasa a la última página.
+* El recorrido es cíclico: si al llegar a la última página se presiona el botón "Siguiente", se vuelve a la primera. De modo similar, si estando en lampágina inicial se presiona el botón "Anterior", se pasa a la última página.
 
 ### Registro
 * La sección de Registro permite a un nuevo usuario ingresar sus datos para crear una cuenta.Los datos deben estar completos y cumplir con algunas restricciones. 
