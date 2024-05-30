@@ -12,10 +12,12 @@
 
 :root {
   --more-color: #ffffff4d;  
+  --shadow-color:#f8f8f8ad;
   --main-bg-color: #181419;
   --main-h1h2-color: #FFF;
   --h3-color:#FFF;
    --nav-color:#9f3647;
+   --btn-hover:#bd0927;
   --dark-mode-color: #181419;
   --a-font-color: #FFF;
  }
@@ -222,36 +224,46 @@ z-index: -1;
 
 .btn-div{
     position: relative;
-    margin: 1.5rem 2rem 4rem 80% ;
-    padding: 2rem 0 0 0;
+    margin: 1.5rem 0 4rem 75% ;
+    /*padding: 2rem 0 0 0;*/
     display: block;    
+    height: 4rem ;
 }
 
-.btnRegister{
-  background-color:#9f3647;
+.btn{
+  background-color:var(--nav-color);
   color: #ffffff;
   margin-bottom: 1rem;
-  padding: 1rem 2rem;
-  border-radius: 5px;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
+  height: 2.5rem;
+  width: 35%; 
   text-decoration: none;
-   /* Agregar efecto de botón presionado */
-   transition: transform 0.3s, box-shadow 0.3s;
-
-
-
+  border-radius: 5px;
 }
 
-.btnRegister:hover {
-  background-color: #9f3647;
-  transform: scale(0.95);
-  box-shadow: 0 0 10px #ffffff4d;
+ .btnPagina { 
+  padding: 1rem 2rem;
+   }
+
+.btn-Login {
+    
+    display:inline-block;
+    position: relative;
+    padding: 0.4% 1% 0.2% 1%;
+    margin: 5% 7%;        
+}
+
+
+.btn:hover {
+  background-color: var(--btn-hover);
+  transition: transform 0.3s, scale(0.95);
+  box-shadow: 0 0 10px var(--shadow-color);
    }
 
 .buscar{
    background-color: #181419;
-   color:rgb(255, 255, 255);
+   color:var(--h3-color);
    height: 50vh;
    display: flex;
    flex-direction: column;
@@ -272,7 +284,7 @@ z-index: -1;
   align-items: center;
   margin-top: 1rem;
   margin-left: 10%;
-   width: 75%;
+   width: 85%;
   }
 
 
@@ -291,10 +303,11 @@ width: 60%;
  }
 
  .btnBuscar{
-background-color:#9f3647;
+background-color:var(--nav-color);
 display: inline-block;
 color:#ffffff;
 height: 50px;
+width: 15%;
 margin: 20px 10px;
 padding:0 20px;
  border-radius: 25px;
@@ -306,11 +319,6 @@ text-align: center;
  transition: transform 0.3s, box-shadow 0.3s;
  }
 
-.btnBuscar:hover {
- background-color: #9f3647;
- transform: scale(0.95);
- box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
- }
     
 .aclamadas-main {
   width: 90%;
@@ -379,17 +387,6 @@ flex-wrap: wrap;
 
 .peli-link{
   background-color: transparent;
-}
-.btn {
- padding: 0.5rem;
- width: 130px; 
- font-family: 'Montserrat', sans-serif;
- font-size: medium;
- margin-top: 2rem;
- color: var(--h3-color);
- position: center;
- background-color: var(--nav-color);
- border-radius: 8px;
 }
 
 .anterior{
@@ -495,25 +492,6 @@ font-family: 'Montserrat' sans-serif;
 
 }
 
-.btn-verde {
-    background-color:  #97c83e;
-    display:inline-block;
-    position: relative;
-    width: 35%; 
-    height: 2.5rem;
-    font-weight: 400;
-    font-size: 1.1rem;
-    padding: 0.4% 1% 0.2% 1%;
-    color: white;
-    border-radius: 4px;
-    margin: 5% 7%;        
-}
-
-.btn-verde:hover , .btn-logOK:hover {
-      background: linear-gradient(greenyellow, #28a744);
-      transform: scale(1.05);
-      transition: 0.3s;
-} 
 
 #login_btn {
 margin: 5% 32.5%;
