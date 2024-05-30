@@ -55,7 +55,7 @@ try {
         datos.results.forEach((pelicula)=>{
             peliculas += `
             <div class ="peli-link" ><a href="./detalle.html?id=${pelicula.id}" </a>
-            <div class="peli-card">
+            <div class="peli-card animate__animated animate__zoomIn">
                 <div class="card-img">
                     <img class="peli-img" src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}" >
                 </div>
