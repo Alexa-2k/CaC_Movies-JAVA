@@ -1,7 +1,7 @@
 # CaC Movies
 TP integrador simulando una plataforma de películas online, utlizando HTML, CSS, Bootstrap, JS, API TMDB, JAVA
 
-http://Alexa-2k.github.io/Cac_Movies-JAVA
+https://alexa-2k.github.io/CaC_Movies-JAVA/
 
 la página de inicio contiene la sección "Tendencias" que consume la API del sitio TMDB para mostrar la grilla de películas. 
 Spn 500 páginas que pueden ser recorridas mediante los botones 'Anterior' y 'Siguiente'. 
