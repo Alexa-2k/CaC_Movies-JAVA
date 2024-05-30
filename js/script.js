@@ -4,6 +4,7 @@ const contenedor = document.querySelector("#pelis");
 const pager = document.querySelector("#paginar");
 
 
+
 let pagina = 1;
 
 btnAnterior.addEventListener("click", () => {
@@ -20,18 +21,17 @@ btnAnterior.addEventListener("click", () => {
     
   });
 
- 
-  btnSiguiente.addEventListener("click", () => {
-    if (pagina < 500) {
+btnSiguiente.addEventListener("click", () => {
+  if (pagina < 500) {
       //si la pagina es menor que 500, se pasa a la siguiente 
       pagina += 1; 
 
-    }else if(pagina >=500){
+  }else if(pagina >=500){
       //si no, cuando se pasa de la última, se vuelve a la primera
        pagina = 1;
-    } 
-    pager.innerHTML = `Página: ${pagina}`;
-     cargarPeliculas()
+  } 
+  pager.innerHTML = `Página: ${pagina}`;
+  cargarPeliculas()
     // llamar a la funcion que cargue las paginas
 
   });
@@ -79,4 +79,6 @@ try {
 
 //Llamar a la funcion
 cargarPeliculas();
+
+
 
