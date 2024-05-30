@@ -59,7 +59,7 @@ function validateData () {
 function validateUser () {
     var pwd = document.getElementById('passwd').value;
     var usr = document.getElementById('user').value;
-    if ((usuario.value == "") ||(passwd.value == "" ) || (pwd.length < 8) || (usr.length < 8)) {
+    if ((usuario.value == "") ||(passwd.value == "" ) || (pwd.length < 8) || (usr.length < 5)) {
         alertaUser();
         verifUser = false;
         verifPasswd = false;  
