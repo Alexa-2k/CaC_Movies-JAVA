@@ -17,7 +17,8 @@ btnAnterior.addEventListener("click", () => {
          
      //si no, se pasa a la ultima
         cargarPeliculas();
-    // llamar a la funcion que cargue las paginas de las peliculas desde la API
+         window.location.href = "#tendencias";
+    // llamar a la funcion que cargue las paginas de las peliculas desde la API e ir al inicio de la sección de Tendencias
     
   });
 
@@ -34,10 +35,13 @@ btnSiguiente.addEventListener("click", () => {
   pager.innerHTML = `Página: ${pagina}`;
   cargarPeliculas()
   window.location.href = "#tendencias";
-    // llamar a la funcion que cargue las paginas
+    // 
+    // llamar a la funcion que cargue las paginas de las peliculas desde la API e ir al inicio de la sección de Tendencias
 
   });
 
+/*----------------------------------------------------------------
+ Funcion que carga las peliculas: */
 const cargarPeliculas = async () => {
 
 try {
