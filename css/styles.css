@@ -502,7 +502,7 @@ font-family: 'Montserrat' sans-serif;
 
 #registro , #login{
   width: 40%;
-  margin: 3% auto;
+  margin: 9% auto;
   background-color: #000000;
   padding-top: 1%;
 }
@@ -522,19 +522,25 @@ margin: 5% 32.5%;
 /* ================= ALERT ==================== */
 .alerta {
     display: none;
-    width: 50%;
+    width: 33%;
     padding: 0.5% ;
     background-color: #fffff0;
-    color: #7D7D7D;
-    border: #ffc900 solid 2px;
+    border: var(--nav-color) solid 3px;
     border-radius: 5px;
+    color: var(--main-bg-color);
     opacity: 1;
-    z-index: 200;
+    z-index: 10;
     transition: opacity 0.6s;
     position: fixed;
-    bottom:40%; 
-    left: 25%;
+    top:17%; 
+    left: 33.5%;
     text-align: center;
+  }
+
+  .alert-font{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500 !important;
+    color: var(--main-bg-color);
   }
 
 #loginOK, #registroOK{ 
@@ -561,14 +567,14 @@ margin: 5% 32.5%;
   .closebtn {
     margin-left: 15px;
     background-color: #FFA1A1;
-    border-radius: 3px;
+    border-radius: 50px;
     color: #FFF;
     font-weight: bolder;
     float: right;
-    font-size: 23px;
+    font-size: 25px;
     height: 25px;
-    width: 25px;
-    padding-bottom: 0%;
+    width: 28px;
+    padding-bottom: 8.5%;
     cursor: pointer;
     transition: 0.3s;
   }

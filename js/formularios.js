@@ -15,6 +15,12 @@ function borrarData() {
      usuario.value = "";	 
      correo.value = "";
      passwd.value = "";
+     noAlertaMail();
+     noAlertaNombre();
+     noAlertaUser();
+     noShowRegister();  
+
+
 }
 
 function dataInput() {
