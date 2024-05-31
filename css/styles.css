@@ -26,14 +26,11 @@
     75% { transform: translate(-5px, 5px) rotate(-5deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
 }
-/* width */
-
 
 
 body{
   background-color:var(--main-bg-color);
-  color:var(--h3-color); 
-    
+  color:var(--h3-color);   
     
 }
 
@@ -48,6 +45,7 @@ h1{
     margin: 0 0 1% 13%;
     font-weight: 700;
     }
+
 h2 {
     font-size: 2rem;
     font-weight: 200;
@@ -78,26 +76,9 @@ a {
 }
 
 a:hover {
-  color: var(--main-bg-color);
+  color: var(--a-font-color);
+  font-weight: bold;
 }
-
-
-#top-container {
-background-image: url(../images/bannerIA.jpeg);
-background-repeat: no-repeat;
-background-size: 100vw 100vh;
-background-position: center;
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content:flex-start;
-vertical-align: text-top;
-text-align: center;
-animation-duration: 3s;
-z-index: -1;
-
-}
-
 
 .header{
     background-color:var(--nav-color);
@@ -107,7 +88,7 @@ z-index: -1;
     z-index:4;
     }
 
-    .box {
+.box {
       background-color: transparent;
       padding-top: 1%;
       animation-duration: 3s;
@@ -128,6 +109,7 @@ z-index: -1;
  font-weight: 700;
  font-size: 1.2rem;
  }
+
 .Logo:hover{
   animation: tilt-n-move-shaking 0.25s infinite;
   }
@@ -140,9 +122,9 @@ z-index: -1;
   }
 
 .listItem{
-  
    margin-right:20px;
   }
+
 .nav-link{
     text-decoration: none;
     color: #ffffff;
@@ -153,6 +135,7 @@ z-index: -1;
     /* Agregar efecto de botón presionado */
     transition: transform 0.3s, box-shadow 0.3s;  
  }
+
 .nav-link:hover {
    transform: scale(0.95);
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -162,7 +145,7 @@ z-index: -1;
 .iniciarSesion{
    background-color: #181419;
    color: white;
-  padding: 0.5rem 1rem;
+   padding: 0.5rem 1rem;
    border-radius: 5px;
    /* Agregar efecto de botón presionado */
    transition: transform 0.3s, box-shadow 0.3s;
@@ -174,6 +157,24 @@ z-index: -1;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
  }
 
+
+#top-container {
+background-image: url(../images/bannerIA.jpeg);
+background-repeat: no-repeat;
+background-size: 100vw 100vh;
+background-position: center;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content:flex-start;
+vertical-align: text-top;
+text-align: center;
+animation-duration: 3s;
+z-index: -1;
+}
+
+
+/*========================================================*/
 
 /*ESTILOS PARA HEADER MOBILE Y TABLET*/
 
@@ -203,32 +204,14 @@ z-index: -1;
     margin-right: initial;
     font-size: 1rem;
     padding: 0.2rem;
-   }
-    
-  
+   }   
 }
-
-
-/* MAIN ESCRITORIO*/
-
-hr{
-  margin-bottom: 5rem;
-}
-
-.main-title {
-  margin-top: 8%;
-}
-
-
-.subtitle  
-{
-    margin: 7% auto 3%;
-}
+/*===================================*/
+/* BOTONES */
 
 .btn-div{
     position: relative;
     margin: 1.5rem 0 4rem 75% ;
-    /*padding: 2rem 0 0 0;*/
     display: block;    
     height: 4rem ;
 }
@@ -245,9 +228,35 @@ hr{
   border-radius: 5px;
 }
 
+.btn:hover {
+  background-color: var(--btn-hover);
+  transition: transform 0.3s, scale(0.95);
+  box-shadow: 0 0 30px var(--shadow-color);
+   }
 
-.btn-Login {
-    
+.btnPagina { 
+  padding: 1rem 2rem;
+   }
+
+
+.btnBuscar{
+ background-color:var(--nav-color);
+ display: inline-block;
+ color:#ffffff;
+ height: 50px;
+ width: 15%;
+ margin: 20px 10px;
+ padding:0 20px;
+ border-radius: 25px;
+ font-size: 1.2rem;
+ font-weight: 700;
+ border: 2px solid white;
+ text-align: center;
+ /* Agregar efecto de botón presionado */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-Login { 
     display:inline-block;
     position: relative;
     padding: 0.4% 1% 0.2% 1%;
@@ -255,17 +264,23 @@ hr{
 }
 
 
-.btn:hover {
-  background-color: var(--btn-hover);
-  transition: transform 0.3s, scale(0.95);
-  box-shadow: 0 0 30px var(--shadow-color);
-   }
+/*===================================*/
 
+/* MAIN ESCRITORIO*/
 
- .btnPagina { 
-  padding: 1rem 2rem;
+hr {
+  margin-bottom: 5rem;
+}
 
-   }
+.main-title {
+  margin-top: 8%;
+}
+
+.subtitle  {
+    margin: 7% auto 3%;
+}
+
+/*======= BUSCADOR ========*/
 
 .buscar{
    background-color: #181419;
@@ -277,13 +292,6 @@ hr{
    align-items: center;
     }    
   
-  .section-title{
-  font-size: 2.5rem;
-  font-weight: 100;
-  margin: 1rem auto;
-
-   }
-
 .buscaPeli{
   display: flex;
   justify-content: center;
@@ -296,38 +304,60 @@ hr{
 
 .input {
  border: 2px solid white;
-border-radius: 25px;
-color: #000000;
-font-size: 1.5rem;
+ border-radius: 25px;
+ color: #000000;
+ font-size: 1.5rem;
  height: 50px;
-margin: 20px 10px;
+ margin: 20px 10px;
  outline: none;
  padding: 0px 20px;
-width: 60%;
+ width: 60%;
  position: relative;
  display:inline-block;
- }
+}
 
- .btnBuscar{
-background-color:var(--nav-color);
-display: inline-block;
-color:#ffffff;
-height: 50px;
-width: 15%;
-margin: 20px 10px;
-padding:0 20px;
- border-radius: 25px;
- font-size: 1.2rem;
-font-weight: 700;
-border: 2px solid white;
-text-align: center;
- /* Agregar efecto de botón presionado */
- transition: transform 0.3s, box-shadow 0.3s;
- }
+/*======= TENDENCIAS =======*/
 
+.section-title{
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin: 1rem auto;
+
+   }
 #pelis{
   margin: 0 auto;
   width:86%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-top: 5%;
+  margin-left: 5%;
+  background-color: var(--dark-mode-color);
+  position: relative;
+}
+
+.peli-card {
+  height: 25rem;
+  min-width: 200px;
+  max-width: 250px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightgray;
+  border-radius: 10px;
+  margin: 2%;
+  padding: 1%;   
+}
+
+.peli-card:hover {
+  transform: scale(1.04);
+  border-width: 3px; 
+  box-shadow: 5px 10px #888888;
+  transition: 0.6s;
 }
 
 #btnPaginas{
@@ -343,53 +373,21 @@ text-align: center;
   padding-left: 27%;
 }
 
+/*======= ACLAMADAS =======*/
+
+.section-title{
+position: relative; 
+display: block;
+margin: 3% auto;
+}
 
 .aclamadas-main {
-  width: 90%;
+  width: 80%;
   flex-direction: row;
-  /*overflow: auto;*/
   display:flex;
   margin: 3% auto;
-   overflow-x: auto;
-   min-height: 35rem;
-}
-
-
-.flex-container {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-  width: 95%;
-  margin-top: 5%;
-  margin-left: 5%;
-  background-color: var(--dark-mode-color);
-  position: relative;
-  }
-
-
-.peli-card {
-  height: 25rem;
-  min-width: 200px;
-  max-width: 250px;
-  text-align: center;
-    border-style: solid;
-    border-width: 2px;
-    border-color: lightgray;
-    border-radius: 10px;
-    margin: 2%;
-    padding: 1%;   
-
-}
-
-.peli-card:hover {
-    transform: scale(1.04);
-    border-width: 3px; 
-    box-shadow: 5px 10px #888888;
-    transition: 0.6s;
-}
-
-.online-img {
-  width: 75%;
+  overflow-x: auto;
+  min-height: 27rem;
 }
 
 .card-img {
@@ -409,42 +407,18 @@ flex-wrap: wrap;
   z-index: 4 !important;
   }
 
-.peli-link{
-  background-color: transparent;
+.card-title :hover {
+  font-weight: 500;
 }
 
-
-.more{
-  margin-top: 1rem;
- background-color: transparent;
-  border-color:  var(--h3-color);
-  color:var(--h3-color);
-  padding: 0.5rem 2rem;
-}
-
-.peli{
-  margin-top: 3.5rem;
-}
-.aclamadas-main {
-  width: 75%;
-  flex-direction: row;
-  display:flex;
-  overflow-x: auto;
-  min-height: 33rem;
-}
-
-.section-title{
-position: relative; 
-display: block;
-margin: 3% auto;
-
-}
+/*======= DETALLE =======*/
 
 #peli-detalle {
   width: 99%;
   margin:0;
   padding: 0;
 }
+
 #detalle-img {
   display: flex;
   width:25%;
@@ -473,7 +447,7 @@ margin: 3% auto;
 }
 
 
-/* ----------------- REGISTER --------------------  */
+/* ======= REGISTER / LOGIN ======= */
 
 *{
 margin: 0;
@@ -490,11 +464,8 @@ font-family: 'Montserrat' sans-serif;
 }
 
 .another-box {
-  /*    background-color: #97c83e;*/
     background-color: transparent;
-    
-      
-    }
+}
 
 #registro , #login{
   width: 40%;
@@ -506,9 +477,7 @@ font-family: 'Montserrat' sans-serif;
 .container-registro, .botones-registro {
     width: 90%;
     margin: 3% auto;
-
 }
-
 
 #login_btn {
 margin: 5% 32.5%;
@@ -552,27 +521,19 @@ margin: 5% 32.5%;
  .mensaje {
     margin: 1.5% auto;
  }
- #iconoOK {
-    margin-left: 6%;
- }
- 
- #registroOK h3, h4 {
-    font-weight: 400;
- }
 
-  .closebtn {
-    margin-left: 15px;
+.closebtn {
     background-color: #FFA1A1;
     border-radius: 50px;
     color: #FFF;
-    font-weight: bolder;
+    cursor: pointer;
     float: right;
     font-size: 25px;
+    font-weight: bolder;
     height: 25px;
-    width: 28px;
+    margin-left: 15px;
     padding-bottom: 8.5%;
-    cursor: pointer;
-    transition: 0.3s;
+    width: 28px;   
   }
   
   .closebtn:hover {
