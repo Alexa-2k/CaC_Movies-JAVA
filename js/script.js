@@ -26,12 +26,14 @@ btnSiguiente.addEventListener("click", () => {
       //si la pagina es menor que 500, se pasa a la siguiente 
       pagina += 1; 
 
+
   }else if(pagina >=500){
       //si no, cuando se pasa de la última, se vuelve a la primera
        pagina = 1;
   } 
   pager.innerHTML = `Página: ${pagina}`;
   cargarPeliculas()
+  window.location.href = "#tendencias";
     // llamar a la funcion que cargue las paginas
 
   });
@@ -66,7 +68,7 @@ try {
            </div>`;
         });
         contenedor.innerHTML = peliculas;
-        window.location.href = "#tendencias";
+        
        
     } // Si  hay error 404, mensaje
     else if (respuesta.status === 404) {
@@ -84,3 +86,14 @@ cargarPeliculas();
 
 /*==================================================================*/
 /* DETALLE PELICULA - PRUEBA*/
+function fetchMovieDetails(movieId) {
+        fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=615cdfacf7dd0263ec1fcea8ee4352f6&language=es-MX`)
+           .then(response => response.json())
+           .then(data => {
+                document.querySelector('#peli-detalle img.peli-img').src = `https://image.tmdb.org/t/p/w500${data.poster_path}`;
+                document.querySelector('.peli-title').textContent = data.title;
+                document.querySelector('.peli-descripcion').textContent = data.overview;
+                document.querySelector('.peli-estreno').textContent = `Estreno: ${new Date(data.release_date).getFullYear()}`;
+            })
+           .catch(error => console.error('Error:', error));
+    }
