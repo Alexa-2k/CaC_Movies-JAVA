@@ -1,7 +1,7 @@
 # CaC Movies
 TP integrador simulando una plataforma de películas online, utlizando HTML, CSS, Bootstrap, JS, API TMDB, JAVA
 
-https://alexa-2k.github.io/CaC_Movies-JAVA/
+https://alexa-2k.github.io/CaC_Movies-JAVA/index.html
 
 ## Detalles:
 ### Animaciones
