@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
+    
 
     <title>CAC-Movies</title>
 </head>
@@ -53,7 +54,9 @@
         </div>  <!--  peli-info  -->
     </div>   <!--  peli-detalle  -->
 
- 
+
+
+
 </main>
 
 <footer class="footer">
@@ -68,8 +71,27 @@
     </nav>
     
  </footer>
- 
- <script src="./js/script.js"></script>  
+  
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const movieId = urlParams.get('id');
+    console.log(movieId);
+    if (movieId) {
+        fetchMovieDetails(movieId);
+    }
 
+    function fetchMovieDetails(movieId) {
+        fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=615cdfacf7dd0263ec1fcea8ee4352f6&language=es-MX`)
+           .then(response => response.json())
+           .then(data => {
+                document.querySelector('#peli-detalle img.peli-img').src = `https://image.tmdb.org/t/p/w500${data.poster_path}`;
+                document.querySelector('.peli-title').textContent = data.title;
+                document.querySelector('.peli-descripcion').textContent = data.overview;
+                document.querySelector('.peli-estreno').textContent = `Estreno: ${new Date(data.release_date).getFullYear()}`;
+            })
+           .catch(error => console.error('Error:', error));
+    }
+</script>
+ <script src="./js/script.js"></script>  
 </body>
 </html>
