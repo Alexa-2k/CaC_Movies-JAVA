@@ -2,9 +2,8 @@ const btnAnterior = document.querySelector("#anterior");
 const btnSiguiente = document.querySelector("#siguiente");
 const contenedor = document.querySelector("#pelis");
 const pager = document.querySelector("#paginar");
-const apiKey = '615cdfacf7dd0263ec1fcea8ee4352f6'; 
-const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`;
-const web = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=es-MX&page=${pagina}`;
+
+
 
 
 let pagina = 1;
@@ -14,7 +13,7 @@ btnAnterior.addEventListener("click", () => {
       //si la pagina es mayor que 1, se pasa a la anterior
       pagina -= 1;
     }else if (pagina<=1){   
-     pagina = 500;}
+     pagina = 150;}
      pager.innerHTML = `Página: ${pagina}`;
          
      //si no, se pasa a la ultima
@@ -25,12 +24,12 @@ btnAnterior.addEventListener("click", () => {
   });
 
 btnSiguiente.addEventListener("click", () => {
-  if (pagina < 500) {
+  if (pagina < 150) {
       //si la pagina es menor que 500, se pasa a la siguiente 
       pagina += 1; 
 
 
-  }else if(pagina >=500){
+  }else if(pagina >=150){
       //si no, cuando se pasa de la última, se vuelve a la primera
        pagina = 1;
   } 
@@ -43,12 +42,11 @@ btnSiguiente.addEventListener("click", () => {
 
 /*----------------------------------------------------------------
  Funcion que carga las peliculas: */
-
 const cargarPeliculas = async () => {
 
 try {
     //cargar en una variable el fetch de la API
-    const respuesta = await fetch(web)
+    const respuesta = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=615cdfacf7dd0263ec1fcea8ee4352f6&language=es-MX&page=${pagina}`)
     //verificar la respuesta en consola
     console.log(respuesta);
 
@@ -112,11 +110,12 @@ function fetchMovieDetails(movieId) {
 
  /* ========= PRUEBA ACLAMADAS =============*/ 
 const cargarAclamadas = async (ids) => {
+  const apiKey = '615cdfacf7dd0263ec1fcea8ee4352f6'; // Asegúrate de usar tu propia clave API
   const contAclamadas = document.querySelector('#aclamadas-main'); 
 
   try {
     for (let id of ids) {
-      
+      const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`;
       const resp = await fetch(url);
 
       if (resp.status === 200) {
@@ -149,6 +148,6 @@ const cargarAclamadas = async (ids) => {
   }
 };
 
-// Llamar a la función con  IDs específicos
+// Llamar a la función con tus IDs específicos
 const ids = [497, 155, 49026, 218, 105, 165, 196, 27205, 2277, 603, 16869, 36657, 1726, 157336, 238, 240, 242];
 cargarAclamadas(ids);
