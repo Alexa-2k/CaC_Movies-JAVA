@@ -381,13 +381,13 @@ display: block;
 margin: 3% auto;
 }
 
-.aclamadas-main {
-  width: 80%;
+#aclamadas-main {
+  width: 85%;
   flex-direction: row;
   display:flex;
   margin: 3% auto;
   overflow-x: auto;
-  min-height: 27rem;
+  min-height: 30rem;
 }
 
 .card-img {
