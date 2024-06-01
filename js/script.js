@@ -4,7 +4,7 @@ const contenedor = document.querySelector("#pelis");
 const pager = document.querySelector("#paginar");
 const apiKey = '615cdfacf7dd0263ec1fcea8ee4352f6'; 
 const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`;
-const web = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=es-MX&page=${pagina}`;
+const web = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=es-MX&page=${pagina}`;
 
 
 let pagina = 1;
