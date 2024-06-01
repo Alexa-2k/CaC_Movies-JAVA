@@ -10,7 +10,7 @@ btnAnterior.addEventListener("click", () => {
       //si la pagina es mayor que 1, se pasa a la anterior
       pagina -= 1;
     }else if (pagina<=1){   
-     pagina = 150;}
+     pagina = 500;}
      pager.innerHTML = `Página: ${pagina}`;
          
      //si no, se pasa a la ultima
@@ -21,12 +21,12 @@ btnAnterior.addEventListener("click", () => {
   });
 
 btnSiguiente.addEventListener("click", () => {
-  if (pagina < 150) {
+  if (pagina < 500) {
       //si la pagina es menor que 500, se pasa a la siguiente 
       pagina += 1; 
 
 
-  }else if(pagina >=150){
+  }else if(pagina >= 500){
       //si no, cuando se pasa de la última, se vuelve a la primera
        pagina = 1;
   } 
