@@ -3,9 +3,6 @@ const btnSiguiente = document.querySelector("#siguiente");
 const contenedor = document.querySelector("#pelis");
 const pager = document.querySelector("#paginar");
 
-
-
-
 let pagina = 1;
 
 btnAnterior.addEventListener("click", () => {
@@ -46,7 +43,7 @@ const cargarPeliculas = async () => {
 
 try {
     //cargar en una variable el fetch de la API
-    const respuesta = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=615cdfacf7dd0263ec1fcea8ee4352f6&language=es-MX&page=${pagina}`)
+    const respuesta = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=615cdfacf7dd0263ec1fcea8ee4352f6&language=es-MX&page=${pagina}`)
     //verificar la respuesta en consola
     console.log(respuesta);
 
